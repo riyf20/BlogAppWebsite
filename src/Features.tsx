@@ -4,6 +4,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import './Features.css'
 import {images} from '../constants/images';
 import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 
 
 function Features() {
@@ -26,7 +27,7 @@ function Features() {
     }, [emblaApi])
 
     // Used for animating parent component
-    const container = {
+    const container: Variants = {
         hidden: { opacity: 0 },
         show: {
             opacity: 1,
@@ -38,7 +39,7 @@ function Features() {
     };
 
     // Used to animate children component
-    const item = {
+    const item: Variants = {
         hidden: { opacity: 0, scale: 0.6 },
         show: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 120, damping: 16 } },
     };

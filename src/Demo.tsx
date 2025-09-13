@@ -6,12 +6,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { motion } from 'framer-motion'
+import type { Variants } from 'framer-motion';
 
 
 function Demo() {
 
   // Used for animating parent component
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: {
         opacity: 1,
@@ -23,7 +24,7 @@ function Demo() {
     };
 
   // Used to animate children component
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, scale: 0.6 },
     show: { 
       opacity: 1,
