@@ -8,6 +8,9 @@ import Navbar from "./Navbar";
 
 
 function App() {
+
+  console.log("Version 1.1.3")
+
   return (
     <>
       <Navbar/>
